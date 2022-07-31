@@ -39,3 +39,13 @@ User $ source 환경명/bin/activate
 # 장고 실행
 (venv) User $ python manage.py runserver
 ```
+
+# 3. 비동기 지원
+
+```sh
+# Uvicorn 설치
+(venv) User $ pip install uvicorn
+
+# Uvicorn 실행
+(venv) User $ uvicorn myproject.asgi:application --reload
+```
